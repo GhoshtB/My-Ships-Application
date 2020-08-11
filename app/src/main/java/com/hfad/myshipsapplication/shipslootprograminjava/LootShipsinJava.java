@@ -42,9 +42,10 @@ public class LootShipsinJava {
 
     public static void main(String[] args) {
         int[] shipsbasedOnloots = {3, 6, 2, 7, 5, 9, 4, 8};
-
-        while (shipsbasedOnloots.length > 2) {
+int k=shipsbasedOnloots.length;
+        while (k > 1) {
             shipsbasedOnloots = checkforLootedArrays(shipsbasedOnloots);
+            k--;
         }
 
         System.out.println("After " + days + " Days Looting will Stop");

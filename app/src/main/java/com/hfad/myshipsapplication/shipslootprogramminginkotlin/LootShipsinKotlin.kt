@@ -1,7 +1,5 @@
 package com.hfad.myshipsapplication.shipslootprogramminginkotlin
 
-import com.hfad.myshipsapplication.shipslootprograminjava.LootShipsinJava
-
 class LootShipsinKotlin {
     companion object {
         var days = 0
@@ -41,8 +39,11 @@ anotherArray[k++]=array[i]
 
     fun main(args: Array<String>) {
         var array = intArrayOf(3, 6, 2, 7, 5, 9, 4, 8)
-        while (array.size>2){
+        var k: Int = array.size
+
+        while (k>1){
             array= LootShipsinKotlin.checkforLootedArrays(array)
+            k--
         }
         println("After $days Days Looting will Stop")
     }
